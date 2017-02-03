@@ -10,8 +10,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.introtoandroid.inclass_activity_01_bundy.MainActivity">
 
-    <TextView
+    <DatePicker
+        android:id="@+id/DatePicker01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"/>
+
+
+    <TimePicker
+        android:id="@+id/TimePicker01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:spinnersShown="true"
+        android:layout_below="@+id/DatePicker01"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+
 </RelativeLayout>
